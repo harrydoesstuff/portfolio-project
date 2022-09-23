@@ -31,7 +31,6 @@ body {
 /* TITLE CSS */
 
 .welcome {
-    border: 2px solid black;
     padding-top: 250px;
     max-width: 900px;
     display: flex;
@@ -65,7 +64,6 @@ body {
 
 
 .nav-bar {
-    border: 2px solid black;
     max-width: 400px;
     display: flex;
     flex-direction: column;
