@@ -1,0 +1,57 @@
+
+
+/*CONTAINER CSS*/
+
+.container {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/*HEADER CSS*/
+
+.header {
+    display: flex;
+    
+}
+
+.profile-image {
+    height: auto;
+    max-width: 100px;
+}
+
+/*MAIN CONTAINER CSS*/
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
+
+.projects {
+    max-width: 200px;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.project-image {
+    max-width: 200px;
+    height: auto;
+}
+.project-text {
+    padding: 10px;
+}
+
+/*FOOTER CSS*/
+
+.footer {
+    display: flex;
+}
+
+.footer-image {
+    height: auto;
+    max-width: 100px;
+}
+
