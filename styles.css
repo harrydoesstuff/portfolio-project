@@ -1,44 +1,162 @@
+/* .gradient {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-image: url(images/mesh2.png);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 0);
+} */
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+ 
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+body {
+    /* background-image: linear-gradient(176deg, hsl(241, 59%, 58%) 40%, #b53b3b calc(90% + 2px)); */
+    background-image: linear-gradient(to left bottom, #051937, #004e70, #00888e, #48c08d, #cff182);
+    background-attachment: fixed;
+}
+
+/* TITLE CSS */
+
+.welcome {
+    border: 2px solid black;
+    padding-top: 250px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* padding-bottom: 300px; */
+}
+
+#welcome {
+    stroke-dasharray: 600;
+    color: white;
+
+    animation: draw-welcome 3s ease-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes draw-welcome {
+    from {
+        stroke-dashoffset: 600;
+        fill: transparent;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+}
+
+/* NAV CSS */
+
+
+.nav-bar {
+    border: 2px solid black;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+.nav-link {
+    color: white;
+}
 
 
 /*CONTAINER CSS*/
 
 .container {
-    max-width: 900px;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     margin: auto;
+    align-items: center;
+    padding-top: 300px;
 }
 
 /*HEADER CSS*/
 
 .header {
     display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.about-container {
     
+    background-color: rgba(255, 255, 255, 0.797);
+    border-radius: 5px;
+    max-width: 400px;
+    padding: 15px;
+    box-shadow: rgba(28, 27, 27, 0.691) 0px 7px 29px 0px;
+    padding-left: 50px;
+
 }
 
 .profile-image {
     height: auto;
-    max-width: 100px;
+    max-width: 300px;
+    box-shadow: rgba(28, 27, 27, 0.691) 0px 7px 29px 0px;
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+    border-radius: 5px;
+
 }
 
 /*MAIN CONTAINER CSS*/
+
+.main {
+
+    max-width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 20px;
+    padding-top: 0px;
     
 }
 
+.main .heading {
+    padding-left: 20px;
+}
+
 .projects {
-    max-width: 200px;
+    border-radius: 5px;
+    max-width: 300px;
     margin: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: rgba(255, 255, 255, 0.797);
 }
 
 .project-image {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
+    border-radius: 5px;
+
 }
 .project-text {
     padding: 10px;
@@ -46,12 +164,30 @@
 
 /*FOOTER CSS*/
 
-.footer {
+.footer .container {
     display: flex;
+    flex-direction: row;
 }
+
+
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.797);
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-left: 40px;
+}
+
+
+
 
 .footer-image {
     height: auto;
-    max-width: 100px;
+    max-width: 200px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    left: 30px;
+    bottom: 20px;
 }
-
