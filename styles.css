@@ -38,6 +38,10 @@ body {
 
 /* TITLE CSS */
 
+.welcome-mobile {
+    display: none;
+}
+
 .welcome {
     padding-top: 250px;
     max-width: 900px;
@@ -284,11 +288,10 @@ body {
 .contact-container {
     background-color: rgba(255, 255, 255, 0.797);
     max-width: 400px;
-    padding: 15px;
+    padding: 25px;
     border-radius: 5px;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    padding-left: 40px;
 }
 
 
@@ -299,3 +302,79 @@ body {
     max-width: 150px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+
+
+
+    .nav-bar, .welcome {
+        display: none;
+    }
+
+    .welcome-mobile {
+        padding-top: 250px;
+        max-width: 480px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 300px;
+       
+    }
+    
+    #welcome {
+        stroke-dasharray: 195;
+
+        color: white;
+        
+        animation: draw-welcome 4s ease-out;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    
+    @keyframes draw-welcome {
+        from {
+            stroke-dashoffset: 195;
+        }
+    
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    .container {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .header {
+        padding-bottom: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-container {
+        max-width: 480px;
+
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        padding-top: 100px;
+        max-width: 480px;
+    }
+
+    .contact-container {
+        max-width: 300px;
+    }
+
+}
+
