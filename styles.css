@@ -24,9 +24,13 @@ a {
 
 body {
     /* background-image: linear-gradient(176deg, hsl(241, 59%, 58%) 40%, #b53b3b calc(90% + 2px)); */
-    background-image: linear-gradient(to left bottom, #051937, #004e70, #00888e, #48c08d, #cff182);
+    /* background-image: linear-gradient(to left bottom, #051937, #004e70, #00888e, #48c08d, #cff182); */
+
+    background-image: linear-gradient(to right bottom, #172361, #16255c, #172758, #192852, #1b294d, #1b2f4e, #1e344e, #23394d, #2c4351, #384d55, #47575a, #576060);
     background-attachment: fixed;
+
 }
+
 
 /* TITLE CSS */
 
@@ -35,14 +39,15 @@ body {
     max-width: 900px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto;
-    /* padding-bottom: 300px; */
+    padding-bottom: 300px;
 }
 
 #welcome {
     stroke-dasharray: 600;
     color: white;
-
+    
     animation: draw-welcome 3s ease-out;
     animation-iteration-count: 1;
     animation-direction: alternate;
@@ -51,12 +56,11 @@ body {
 @keyframes draw-welcome {
     from {
         stroke-dashoffset: 600;
-        fill: transparent;
+        
     }
 
     to {
         stroke-dashoffset: 0;
-        fill: white;
     }
 }
 
@@ -71,22 +75,40 @@ body {
     position: fixed;
     gap: 30px;
     padding-left: 20px;
+    margin-top: 240px;
 }
 
 .nav-link {
-    color: white;
+    color: rgba(255, 255, 255, 0.719);
+    stroke-dasharray: 140;
+
+    animation: draw-nav 5s ease-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
 }
+
+@keyframes draw-nav {
+    from {
+        stroke-dashoffset: 140;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
 
 
 /*CONTAINER CSS*/
 
 .container {
+
     max-width: 1920px;
     display: flex;
     flex-direction: column;
     margin: auto;
     align-items: center;
-    padding-top: 300px;
+    /* padding-top: 300px; */
 }
 
 /*HEADER CSS*/
@@ -95,6 +117,8 @@ body {
     display: flex;
     justify-content: center;
     margin: 30px;
+    min-height: 600px;
+    padding-top: 40px;
 }
 
 .about-container {
@@ -102,6 +126,7 @@ body {
     background-color: rgba(255, 255, 255, 0.797);
     border-radius: 5px;
     max-width: 400px;
+    max-height: 250px;
     padding: 15px;
     box-shadow: rgba(28, 27, 27, 0.691) 0px 7px 29px 0px;
     padding-left: 50px;
@@ -162,9 +187,12 @@ body {
 
 /*FOOTER CSS*/
 
+
+
 .footer .container {
     display: flex;
     flex-direction: row;
+    min-height: 700px;
 }
 
 
