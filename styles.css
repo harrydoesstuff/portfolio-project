@@ -40,6 +40,7 @@ body {
 
 .welcome-mobile {
     display: none;
+    /* display: none; */
 }
 
 .welcome {
