@@ -133,25 +133,37 @@ body {
 
 }
 
-.profile-image {
+/* .profile-image {
     height: auto;
     max-width: 300px;
-    box-shadow: rgba(28, 27, 27, 0.691) 0px 7px 29px 0px;
-    position: relative;
     left: 30px;
     bottom: 20px;
     border-radius: 5px;
 
-}
+} */
 
 /*MAIN CONTAINER CSS*/
 
 .main {
-
     max-width: 1000px;
     padding: 20px;
     display: flex;
     flex-direction: column;
+}
+
+
+
+.main .heading {
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.projects-image {
+    height: auto;
+    max-width: 200px;
+    
 }
 
 .projects-container {
@@ -160,12 +172,8 @@ body {
     gap: 20px;
     padding: 20px;
     padding-top: 0px;
-    
 }
 
-.main .heading {
-    padding-left: 20px;
-}
 
 .projects {
     border-radius: 5px;
@@ -175,7 +183,7 @@ body {
     background-color: rgba(255, 255, 255, 0.797);
 }
 
-.project-image {
+.projects-container .project-image {
     max-width: 300px;
     height: auto;
     border-radius: 5px;
@@ -210,10 +218,5 @@ body {
 
 .footer-image {
     height: auto;
-    max-width: 200px;
-    border-radius: 5px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    position: relative;
-    left: 30px;
-    bottom: 20px;
+    max-width: 150px;
 }
